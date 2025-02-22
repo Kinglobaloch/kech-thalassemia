@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if title %}
+            <title>KTCC --{{title}}</title>
+        {% else %}
+            <title>Kech Thalassemia</title>
+        {% endif %}
+    <link rel="icon" href="/static/mini_logo.jpeg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="/static/base.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #7ccbff;" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fas fa-heartbeat"></i> Kech Thalassemia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/team">KTCC Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        
+    </style>
+    {% block contents %}{% endblock contents %}
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <!-- <p>&copy; 2025 Kech Thalassemia Care Center (KTCC) . All rights reserved.</p> -->
+            <div class="social-links">
+                <footer class="dark-footer">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul class="quick-links">
+                                <li><a href="/home">Home</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/team">KTCC Team</a></li>
+                                <li><a href="/contant">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <h4 >Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/kechthalassemiacarecenter/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                                <a href="https://x.com/kechthalassemia" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/explore/locations/111511437055640/kech-thalassemia-care-center/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://pk.linkedin.com/in/kech-thalassemia-care-center-651476338" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        &copy; 2025 Kech Thalassemia Care Center (KTCC). All rights reserved.
+                    </div>
+                </footer>
+                <!-- Include Font Awesome for icons -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        AOS.init({
+                            duration: 800,   // animation duration in ms
+                            easing: 'slide', // easing function for animation
+                            once: true       // whether animation should happen only once while scrolling down
+                        });
+                    });
+                </script>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
